@@ -68,14 +68,22 @@
 }
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (section) {
+        return 1;
+    }
     return self.dataA.count;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeTableViewControllerCell" forIndexPath:indexPath];
+    
+    if (indexPath.section) {
+        cell.textLabel.text = @"功能示例查看";
+        return cell;
+    }
     
     NSDictionary *infoModel = self.dataA[indexPath.row];
     cell.textLabel.text = infoModel[@"title"];
@@ -86,6 +94,13 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.section) {
+        //跳转显示
+        Class cls = NSClassFromString(@"ExampleIndexController");
+        [self.navigationController pushViewController:[cls new] animated:NO];
+        return;
+    }
     
     NSDictionary *infoModel = self.dataA[indexPath.row];
     if (indexPath.row) {

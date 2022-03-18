@@ -22,6 +22,8 @@
 		F773E82D27BA38EF00C229D7 /* XHThemeTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F773E7E827BA38EE00C229D7 /* XHThemeTool.a */; };
 		F773E82E27BA38EF00C229D7 /* XHThemeInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F773E7EA27BA38EE00C229D7 /* XHThemeInfo.plist */; };
 		F773E84127BA390D00C229D7 /* ThemeSource in Resources */ = {isa = PBXBuildFile; fileRef = F773E84027BA390D00C229D7 /* ThemeSource */; };
+		FCCF929E27E44FB600248633 /* ExampleIndexController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCF929D27E44FB600248633 /* ExampleIndexController.m */; };
+		FCCF92A427E451B200248633 /* FunctionExamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCF92A327E451B200248633 /* FunctionExamViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,10 @@
 		F773E7F927BA38EE00C229D7 /* UILabel+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Theme.h"; sourceTree = "<group>"; };
 		F773E7FA27BA38EE00C229D7 /* UITextField+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Theme.h"; sourceTree = "<group>"; };
 		F773E84027BA390D00C229D7 /* ThemeSource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ThemeSource; sourceTree = "<group>"; };
+		FCCF929C27E44FB600248633 /* ExampleIndexController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleIndexController.h; sourceTree = "<group>"; };
+		FCCF929D27E44FB600248633 /* ExampleIndexController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleIndexController.m; sourceTree = "<group>"; };
+		FCCF92A227E451B200248633 /* FunctionExamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionExamViewController.h; sourceTree = "<group>"; };
+		FCCF92A327E451B200248633 /* FunctionExamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionExamViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +143,8 @@
 		F773E7CD27BA38EE00C229D7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F773E7D127BA38EE00C229D7 /* HomeTableViewController.h */,
-				F773E7CF27BA38EE00C229D7 /* HomeTableViewController.m */,
-				F773E7CE27BA38EE00C229D7 /* SettingTableViewController.h */,
-				F773E7D027BA38EE00C229D7 /* SettingTableViewController.m */,
+				FCCF92A027E450F800248633 /* Usage */,
+				FCCF929F27E450DC00248633 /* FunctionExample */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -257,6 +261,28 @@
 			path = Applications;
 			sourceTree = "<group>";
 		};
+		FCCF929F27E450DC00248633 /* FunctionExample */ = {
+			isa = PBXGroup;
+			children = (
+				FCCF929C27E44FB600248633 /* ExampleIndexController.h */,
+				FCCF929D27E44FB600248633 /* ExampleIndexController.m */,
+				FCCF92A227E451B200248633 /* FunctionExamViewController.h */,
+				FCCF92A327E451B200248633 /* FunctionExamViewController.m */,
+			);
+			path = FunctionExample;
+			sourceTree = "<group>";
+		};
+		FCCF92A027E450F800248633 /* Usage */ = {
+			isa = PBXGroup;
+			children = (
+				F773E7D127BA38EE00C229D7 /* HomeTableViewController.h */,
+				F773E7CF27BA38EE00C229D7 /* HomeTableViewController.m */,
+				F773E7CE27BA38EE00C229D7 /* SettingTableViewController.h */,
+				F773E7D027BA38EE00C229D7 /* SettingTableViewController.m */,
+			);
+			path = Usage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -333,6 +359,8 @@
 			files = (
 				F773E7B827BA38B400C229D7 /* ViewController.m in Sources */,
 				F773E82227BA38EF00C229D7 /* HomeTableViewController.m in Sources */,
+				FCCF929E27E44FB600248633 /* ExampleIndexController.m in Sources */,
+				FCCF92A427E451B200248633 /* FunctionExamViewController.m in Sources */,
 				F773E82B27BA38EF00C229D7 /* ThemeColorKey.m in Sources */,
 				F773E7B227BA38B400C229D7 /* AppDelegate.m in Sources */,
 				F773E7C327BA38B900C229D7 /* main.m in Sources */,
